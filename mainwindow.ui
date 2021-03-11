@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1079</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FapMan</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="mainContainer" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>821</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>779</width>
+       <height>499</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGraphicsView" name="view"/>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTreeView" name="treeView"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelOrigo">
+          <property name="text">
+           <string>Origo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditOrig"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelAngle">
+          <property name="text">
+           <string>Kulma</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditAngle"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonRotate">
+          <property name="text">
+           <string>Käännä</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1079</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTools">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Tiedosto</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuRistikko">
+    <property name="title">
+     <string>Ristikko</string>
+    </property>
+    <addaction name="actionPeilikuva"/>
+    <addaction name="actionYl_salasin"/>
+    <addaction name="actionK_nn"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuN_yt">
+    <property name="title">
+     <string>Näytä</string>
+    </property>
+    <addaction name="actionNosturit"/>
+    <addaction name="actionkipit"/>
+   </widget>
+   <addaction name="menuTools"/>
+   <addaction name="menuRistikko"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuN_yt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Avaa</string>
+   </property>
+   <property name="shortcut">
+    <string>L</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Sammuta</string>
+   </property>
+   <property name="shortcut">
+    <string>X</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Tallenna</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>Tietoja Ohjelmasta</string>
+   </property>
+  </action>
+  <action name="actionPeilikuva">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>peilikuva</string>
+   </property>
+  </action>
+  <action name="actionYl_salasin">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>ylösalasin</string>
+   </property>
+  </action>
+  <action name="actionK_nn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>käännä</string>
+   </property>
+  </action>
+  <action name="actionNosturit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Nosturit</string>
+   </property>
+  </action>
+  <action name="actionkipit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Kipit  Puomit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
